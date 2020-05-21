@@ -59,7 +59,7 @@ public class DBHelper extends SQLiteOpenHelper {
         ArrayList<Note> notes = new ArrayList<Note>();
 
         String[] columns = {COLUMN_ID, COLUMN_NOTE_CONTENT};
-        String condition = COLUMN_NOTE_CONTENT + "Like ?";
+        String condition = COLUMN_NOTE_CONTENT + " Like ?";
         String[] args = {"%" + keyword + "%"};
 
         SQLiteDatabase db = this.getReadableDatabase();

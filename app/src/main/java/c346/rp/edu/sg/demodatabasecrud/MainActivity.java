@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 DBHelper dbh = new DBHelper(MainActivity.this);
                 al.clear();
-                al.addAll(dbh.getAllNotes());
+                al.addAll(dbh.getAllNotes("Number"));
                 dbh.close();
 
                 String txt = "";
